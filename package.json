@@ -1,0 +1,22 @@
+{
+  "name": "spotify-auth-helper",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "develop": "yarn develop:app",
+    "develop:app": "next",
+    "develop:functions": "netlify-lambda serve src/functions",
+    "build": "netlify-lambda build src/functions"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "dotenv": "^8.2.0",
+    "netlify-lambda": "^1.6.3",
+    "next": "^9.4.4",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
+}

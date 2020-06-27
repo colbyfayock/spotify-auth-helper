@@ -1,0 +1,6 @@
+.netlify
+.next
+.env
+dist
+dist-functions
+node_modules
