@@ -2,6 +2,11 @@
 Helper app to grab an access and refresh token from your Spotify account using Oauth 
 
 ## What does this do?
+
+### App & Functions
+This helper is comprised of 2 parts - a web app that provides a UI for ease of use and 2 functions that are created via Netlify functions. These together help provide an easy to use way to grab an Access Token and/or Refresh Token from the Spotify Oauth flow for your own personal use.
+
+### Authorization Flow
 * Clicking "Login" makes a request to the `/login` function that generates and returns a Spotify authorization URL
 * The app redirects you to that Spotify authorization URL to authorize via Oauth
 * Spotify redirects you back to the webapp with a `code` query parameter
@@ -9,6 +14,13 @@ Helper app to grab an access and refresh token from your Spotify account using O
 * That `/token` function uses your environment variables to request authorization from Spotify
 * Upon success, the `/token` endpoint returns the Spotify tokens
 * The app displays the tokens using React state (it is never stored)
+
+### Security Note
+Please use any returned tokens with caution. Leaking these to the public could compromise your account.
+
+Access Tokens have a default expiration of 1 hour, where Refresh Tokens are long lived.
+
+If you accidentally commit this to a repository, you're putting your Spotify account in jeopardy. Be sure to use environment configuration files that are included in your `.gitignore` when using your tokens and not directly in app code.
 
 ## Getting Started
 * `yarn install`
