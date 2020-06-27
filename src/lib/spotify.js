@@ -23,9 +23,6 @@ function contructLoginUrl({ scope }) {
 
 module.exports.contructLoginUrl = contructLoginUrl;
 
-
-
-
 /**
  * postRequestToken
  */

@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "develop": "yarn develop:app",
+    "develop": "concurrently --names 'APP,FUNCTIONS' -c 'bgMagenta.bold,bgBlue.bold' 'yarn develop:app' 'yarn develop:functions'",
     "develop:app": "next",
     "develop:functions": "netlify-lambda serve src/functions",
     "build": "netlify-lambda build src/functions"
@@ -13,6 +13,7 @@
   "license": "ISC",
   "dependencies": {
     "axios": "^0.19.2",
+    "concurrently": "^5.2.0",
     "dotenv": "^8.2.0",
     "netlify-lambda": "^1.6.3",
     "next": "^9.4.4",
