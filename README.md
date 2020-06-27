@@ -1,6 +1,15 @@
 # Spotify Auth Helper
 Helper app to grab an access and refresh token from your Spotify account using Oauth 
 
+## What does this do?
+* Clicking "Login" makes a request to the `/login` function that generates and returns a Spotify authorization URL
+* The app redirects you to that Spotify authorization URL to authorize via Oauth
+* Spotify redirects you back to the webapp with a `code` query parameter
+* Clicking "Get a Token" uses that `code` parameter and makes a request to the `/token` function
+* That `/token` function uses your environment variables to request authorization from Spotify
+* Upon success, the `/token` endpoint returns the Spotify tokens
+* The app displays the tokens using React state (it is never stored)
+
 ## Getting Started
 * `yarn install`
 * Configure environment (see below)
