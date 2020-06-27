@@ -45,3 +45,12 @@ NEXT_PUBLIC_API_ENDPOINT="[Project API Endpoint]"
 * **SPOTIFY_CLIENT_SECRET**: Obtained with an app via [developer.spotify.com](https://developer.spotify.com/)
 * **SPOTIFY_REDIRECT_URI**: Configured in an app via  [developer.spotify.com](https://developer.spotify.com/) - if running locally, this value should be `http://localhost:3000` unless the port is unavailable or you change it. You should see this printed in the terminal when running locally. You should additionally configure this as the redirect URI in the Spotify Developer app configuration.
 * **NEXT_PUBLIC_API_ENDPOINT** This will be the active endpoint this project's functions are deployed or running from - if running locally, this value should be `http://localhost:9000` unless the port is unavailable or you change it. You should see this printed in the terminal when running locally.
+
+## Help! I Stored My Token Where I Shouldn't Have 😱
+
+It's okay - it happens. The good news is it's easy to revoke access.
+
+* Head over to your Spotify.com account page
+* Click Apps in the left sidebar navigation
+* Find the name of the app you created
+* Click Remove Access
