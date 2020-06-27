@@ -1,6 +1,8 @@
 # Spotify Auth Helper
 Helper app to grab an access and refresh token from your Spotify account using Oauth 
 
+[Help! I Stored My Token Where I Shouldn't Have 😱](#help-i-stored-my-token-where-i-shouldnt-have-)
+
 ## What does this do?
 
 ### App & Functions
